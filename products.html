@@ -1,0 +1,749 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BiddyCrop Science</title>
+    <link rel="shortcut icon" type="image/png" href="img/favicon.png" />
+
+    <!-- Bootstrap CDN -->
+    <!-- <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    /> -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script> -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="./bootstrap-4.5.3-dist/bootstrap-4.5.3-dist/css/bootstrap.min.css"
+    />
+    <script src="./bootstrap-4.5.3-dist/bootstrap-4.5.3-dist/js/bootstrap.min.js"></script>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/productpage.css" />
+    <link rel="stylesheet" href="./css/contact.css" />
+    <link rel="stylesheet" href="./css/footer.css" />
+  </head>
+  <body>
+    <!-- header -->
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <div class="container">
+          <img
+            class="navbar-logo"
+            src="img/logo/image 2.png"
+            height="105px"
+            width="80px"
+          />
+          &nbsp; &nbsp;
+
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-lg-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html#about_section">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="index.html#service_section"
+                  >Services</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="index.html#product_section"
+                  >Products</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="index.html#client_section">Clients</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="index.html#contact_section"
+                  >Contact</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- header closed -->
+
+    <!-- Hero section-->
+    <div class="header">
+      <p class="h3">Explore Our Range <br />of Products</p>
+      <p class="sub-heading">
+        See all our products listed below. For any purchase orders <br />
+        contact us.
+      </p>
+    </div>
+
+    <div
+      class="modal fade"
+      id="exampleModal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="row">
+              <div class="col-lg-6 col-md-12 col-sm">
+                <div class="modal_image">
+                  <img
+                    id="productImage"
+                    src="./img/products/products-small/parmanu-removebg-preview-min.png"
+                    alt=""
+                    height="280rem"
+                    width="420rem"
+                  />
+                </div>
+              </div>
+              <div class="col-lg-6 col-md-12 col-sm">
+                <h5 class="modal_heading" id="productName">Parmanu</h5>
+                <div class="modal_para">
+                  <p class="modal_text" id="productDescription">DESCRIPTION</p>
+                  <p class="modal_text" id="productPackage">AVAILABLE IN</p>
+                </div>
+              </div>
+            </div>
+            <div class="container">
+              <div class="footer">
+                <div class="row">
+                  <div class="mfooter col-lg-9 col-md-12 col-sm">
+                    <p class="mfooter_text">
+                      Want to know more about our product?
+                    </p>
+                  </div>
+                  <div class="mfooter mfootercontact col-lg-3 col-md-12 col-sm">
+                    <a
+                      class="modal_contact_btn"
+                      href="index.html#contact_section"
+                      >Contact Us</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Product section-->
+    <div class="container">
+      <p class="products">Our Products</p>
+      <div class="row">
+        <!-- product 1 -->
+        <div class="col-lg-3 col-md-6">
+          <div class="card">
+            <div class="card_image">
+              <img
+                src="./img/products/products-small/parmanu-removebg-preview-min.png"
+                class="card-img-top"
+              />
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Parmanu</h5>
+              <p class="card-text">
+                Parmanu is 100 % Natural, safer and enriched organic plant...
+              </p>
+
+              <!-- Button trigger modal -->
+              <div class="modal_button">
+                <button type="button" class="btn" onclick="showModal(0)">
+                  View details
+                </button>
+              </div>
+
+              <!-- Modal -->
+            </div>
+          </div>
+        </div>
+        <!-- product 1 ends -->
+        <!-- product 2 -->
+        <div class="col-lg-3 col-md-6">
+          <div class="card">
+            <div class="card_image">
+              <img
+                src="./img/products/products-small/biogrow-removebg-preview-min.png"
+                class="card-img-top"
+              />
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Bio-Grow</h5>
+              <p class="card-text">
+                Biddy Bio-Grow is 100 % natural and enriched organic plant...
+              </p>
+
+              <!-- Button trigger modal -->
+              <div class="modal_button">
+                <button type="button" class="btn" onclick="showModal(1)">
+                  View details
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- product 2 ends -->
+        <!-- product 3 -->
+        <div class="col-lg-3 col-md-6">
+          <div class="card">
+            <div class="card_image">
+              <img
+                src="./img/products/products-small/maxo-removebg-preview-min.png"
+                class="card-img-top"
+              />
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Maxo</h5>
+              <p class="card-text">
+                Maxo is a combination of humic acid and nb based latest
+                formula...
+              </p>
+
+              <!-- Button trigger modal -->
+              <div class="modal_button">
+                <button type="button" class="btn" onclick="showModal(2)">
+                  View details
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- product 3 ends -->
+        <!-- product 4 -->
+        <div class="col-lg-3 col-md-6">
+          <div class="card">
+            <div class="card_image">
+              <img
+                src="./img/products/products-small/killerpower-removebg-preview-min.png"
+                class="card-img-top"
+              />
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">KillerPower</h5>
+              <p class="card-text">
+                Killer power is a product based on enhanced bio-technlogical...
+              </p>
+
+              <!-- Button trigger modal -->
+              <div class="modal_button">
+                <button type="button" class="btn" onclick="showModal(3)">
+                  View details
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- product 4 ends -->
+        <!-- product 5-->
+        <div class="col-lg-3 col-md-6">
+          <div class="card">
+            <div class="card_image">
+              <img
+                src="./img/products/products-small/tonix-removebg-preview-min.png"
+                class="card-img-top"
+              />
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Tonix</h5>
+              <p class="card-text">
+                Tonix is a biotechnological flowering stimulant that serves...
+              </p>
+
+              <!-- Button trigger modal -->
+              <div class="modal_button">
+                <button type="button" class="btn" onclick="showModal(4)">
+                  View details
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- product 5 ends -->
+        <!-- product 6 -->
+        <div class="col-lg-3 col-md-6">
+          <div class="card">
+            <div class="card_image">
+              <img
+                src="./img/products/products-small/mantra-removebg-preview-min.png"
+                class="card-img-top"
+              />
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Mantra</h5>
+              <p class="card-text">
+                Mantra is plant growth stimulator. It is helpful for plants
+                to...
+              </p>
+
+              <!-- Button trigger modal -->
+              <div class="modal_button">
+                <button type="button" class="btn" onclick="showModal(5)">
+                  View details
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- product 6 ends -->
+        <!-- product 7 -->
+        <div class="col-lg-3 col-md-6">
+          <div class="card">
+            <div class="card_image">
+              <img
+                src="./img/products/products-small/crosshd-removebg-preview-min.png"
+                class="card-img-top"
+              />
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Cross HD</h5>
+              <p class="card-text">
+                CROSS HD induces alkaloids lactones and growth promoting...
+              </p>
+
+              <!-- Button trigger modal -->
+              <div class="modal_button">
+                <button type="button" class="btn" onclick="showModal(6)">
+                  View details
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- product 7 ends -->
+        <!-- product 8 -->
+        <div class="col-lg-3 col-md-6">
+          <div class="card">
+            <div class="card_image">
+              <img
+                src="./img/products/products-small/shakti-removebg-preview-min.png"
+                class="card-img-top"
+              />
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Shakti</h5>
+              <p class="card-text">
+                SHAKTI 50 G is a growth promoting agent for soil...
+              </p>
+
+              <!-- Button trigger modal -->
+              <div class="modal_button">
+                <button type="button" class="btn" onclick="showModal(7)">
+                  View details
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- product 8 ends -->
+        <!-- product 9 -->
+        <div class="col-lg-3 col-md-6">
+          <div class="card">
+            <div class="card_image">
+              <img
+                src="./img/products/products-small/rango-removebg-preview-min.png"
+                class="card-img-top"
+              />
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Rango</h5>
+              <p class="card-text">
+                RANGO is a silicon based spreader and is a unique product
+                that...
+              </p>
+
+              <!-- Button trigger modal -->
+              <div class="modal_button">
+                <button type="button" class="btn" onclick="showModal(8)">
+                  View details
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- product 9 ends -->
+        <!-- product 10 -->
+        <div class="col-lg-3 col-md-6">
+          <div class="card">
+            <div class="card_image">
+              <img
+                src="./img/products/products-small/ninjapower-removebg-preview-min.png"
+                class="card-img-top"
+              />
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Ninja Power</h5>
+              <p class="card-text">
+                NINJA POWER is a product based on advanced Italian technology.
+              </p>
+
+              <!-- Button trigger modal -->
+              <div class="modal_button">
+                <button type="button" class="btn" onclick="showModal(9)">
+                  View details
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- product 10 ends -->
+        <!-- product 11 -->
+        <div class="col-lg-3 col-md-6">
+          <div class="card">
+            <div class="card_image">
+              <img
+                src="./img/products/products-small/giba-removebg-preview-min.png"
+                class="card-img-top"
+              />
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Giba</h5>
+              <p class="card-text">
+                GIBA is highly sepecialized plant growth ntrient.
+              </p>
+
+              <!-- Button trigger modal -->
+              <div class="modal_button">
+                <button type="button" class="btn" onclick="showModal(10)">
+                  View details
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- product 11 ends -->
+        <!-- product 12 -->
+        <div class="col-lg-3 col-md-6">
+          <div class="card">
+            <div class="card_image">
+              <img
+                src="./img/products/products-small/sticko-removebg-preview-min.png"
+                class="card-img-top"
+              />
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Sticko</h5>
+              <p class="card-text">
+                STICKO has an excellent wetting property and it helps in
+                uniform...
+              </p>
+
+              <!-- Button trigger modal -->
+              <div class="modal_button">
+                <button type="button" class="btn" onclick="showModal(11)">
+                  View details
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- product 12 ends -->
+        <!-- product 13 -->
+        <div class="col-lg-3 col-md-6">
+          <div class="card">
+            <div class="card_image">
+              <img
+                src="./img/products/products-small/fungiplus-removebg-preview-min.png"
+                class="card-img-top"
+              />
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Fungi Plus</h5>
+              <p class="card-text">
+                Fungi plus is a highly specialized bio-derivative for fungal
+                infection.
+              </p>
+
+              <!-- Button trigger modal -->
+              <div class="modal_button">
+                <button type="button" class="btn" onclick="showModal(12)">
+                  View details
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- product 13 ends -->
+        <!-- product 14 -->
+        <div class="col-lg-3 col-md-6">
+          <div class="card">
+            <div class="card_image">
+              <img
+                src="./img/products/products-small/panther-removebg-preview-min.png"
+                class="card-img-top"
+              />
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Panther</h5>
+              <p class="card-text">
+                Panther is a product based on enhanced bio-technlogical...
+              </p>
+
+              <!-- Button trigger modal -->
+              <div class="modal_button">
+                <button type="button" class="btn" onclick="showModal(13)">
+                  View details
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- product 14 ends -->
+        <!-- product 15 -->
+        <div class="col-lg-3 col-md-6">
+          <div class="card">
+            <div class="card_image">
+              <img
+                src="./img/products/products-small/chetak-removebg-preview-min.png"
+                class="card-img-top"
+              />
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Chetak Super 30</h5>
+              <p class="card-text">
+                Chetak Super 30 controls weed and insect for cotton,
+                vegetables...
+              </p>
+
+              <!-- Button trigger modal -->
+              <div class="modal_button">
+                <button type="button" class="btn" onclick="showModal(14)">
+                  View details
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- product 15 ends -->
+        <!-- product 16 -->
+        <div class="col-lg-3 col-md-6">
+          <div class="card">
+            <div class="card_image">
+              <img
+                src="./img/products/products-small/cross-removebg-preview-min.png"
+                class="card-img-top"
+              />
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Cross</h5>
+              <p class="card-text">
+                CROSS induces naturally occuring alkaloids lactones and
+                growth...
+              </p>
+
+              <!-- Button trigger modal -->
+              <div class="modal_button">
+                <button type="button" class="btn" onclick="showModal(15)">
+                  View details
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- product 16 ends -->
+        <!-- product 17 -->
+        <div class="col-lg-3 col-md-6">
+          <div class="card">
+            <div class="card_image">
+              <img
+                src="./img/products/products-small/shera-removebg-preview-min.png"
+                class="card-img-top"
+              />
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Shera</h5>
+              <p class="card-text">
+                SHERA is a product based on advanced bio technlogical...
+              </p>
+
+              <!-- Button trigger modal -->
+              <div class="modal_button">
+                <button type="button" class="btn" onclick="showModal(16)">
+                  View details
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- product 17 ends -->
+        <!-- product 18 -->
+        <div class="col-lg-3 col-md-6">
+          <div class="card">
+            <div class="card_image">
+              <img
+                src="./img/products/products-small/microplus-removebg-preview-min.png"
+                class="card-img-top"
+              />
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Micro Plus</h5>
+              <p class="card-text">
+                Micro Plus is a Micronutrient type plant growth nutrient. Micro
+                Plus...
+              </p>
+
+              <!-- Button trigger modal -->
+              <div class="modal_button">
+                <button type="button" class="btn" onclick="showModal(17)">
+                  View details
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- product 18 ends -->
+        <!-- product 19 -->
+        <div class="col-lg-3 col-md-6">
+          <div class="card">
+            <div class="card_image">
+              <img
+                src="./img/products/products-small/vitaramagic-removebg-preview-min.png"
+                class="card-img-top"
+              />
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Vitara Magic</h5>
+              <p class="card-text">
+                Vitara Magic is a highly specialized bio-derivative which gives
+                the...
+              </p>
+
+              <!-- Button trigger modal -->
+              <div class="modal_button">
+                <button type="button" class="btn" onclick="showModal(18)">
+                  View details
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- product 19 ends -->
+      </div>
+    </div>
+
+    <!-- newsletter section -->
+    <div class="newsletter_section">
+      <div class="container text-center">
+        <form class="news_form text-center" id="newsletterForm">
+          <h3>Subscribe our newsletter <br />for more updates</h3>
+          <br />
+          <div class="form-group">
+            <input
+              type="email"
+              class="form-control"
+              id="exampleInputEmail1"
+              aria-describedby="emailHelp"
+              placeholder="Enter your email address"
+            />
+          </div>
+
+          <div class="Submit_btn_news">
+            <button id="newsletterSubmit" type="submit" class="products-btn">
+              Subscribe
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+    <!--newsletter section ends-->
+
+    <!-- footer starts -->
+    <footer>
+      <div class="footer container">
+        <div class="row">
+          <div class="col-lg-5">
+            <img src="img/logo/image 2.png" class="footer_logo" />
+            <p>
+              Biddy cropscience is a sole proprietorship (individual) trader of
+              bio pesticides, plant growth hormones and bio fertilizers.
+            </p>
+          </div>
+          <div class="col-lg-3">
+            <p><strong>Quick Links</strong></p>
+            <div class="row links">
+              <div class="col-4">
+                <a href="index.html">Home</a>
+              </div>
+              <div class="col-8">
+                <a href="index.html#product_section">Products</a>
+              </div>
+            </div>
+            <div class="row links">
+              <div class="col-4">
+                <a href="index.html#about_section">About</a>
+              </div>
+              <div class="col-8">
+                <a href="index.html#client_section">Testimonials</a>
+              </div>
+            </div>
+            <div class="row links">
+              <div class="col-4">
+                <a href="index.html#service_section">Services</a>
+              </div>
+              <div class="col-8">
+                <a href="index.html#contact_section">Contact Us</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <p><strong>Reach us</strong></p>
+            <span>
+              <div class="row">
+                <div class="col-1">
+                  <img src="./img/footer/Group 54.svg" />
+                </div>
+                <div class="col-11 address">
+                  Patna Office - Dariyapur Road, Kurthol Pincode -
+                  804453(Bihar),India
+                </div>
+              </div>
+            </span>
+            <br />
+            <span
+              ><img src="img/footer/Group 55.svg" /> &nbsp;+91 82108 55126</span
+            ><br /><br />
+            <span
+              ><img src="img/footer/Group 56.svg" />&nbsp;&nbsp;
+              biddycrop@gmail.com</span
+            ><br /><br />
+          </div>
+        </div>
+        <div class="text-center footer_end"><p>biddycrop@2021</p></div>
+      </div>
+    </footer>
+    <!-- footer ends -->
+  </body>
+  <script src="./js/products.js"></script>
+</html>

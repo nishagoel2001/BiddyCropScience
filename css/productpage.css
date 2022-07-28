@@ -1,0 +1,156 @@
+/* Hero section */
+.header {
+  background-image: url("../img/products/productbanner.png");
+  background-repeat: no-repeat;
+  height: 23rem;
+  padding-left: 10%;
+  padding-top: 8rem;
+  color: white;
+  margin-bottom: 5rem;
+  background-size: cover;
+}
+/* hero section heading */
+.h3 {
+  padding-left: 1rem;
+  border-left: 5px solid #a9cc52;
+  font-weight: 700;
+  font-size: 3rem;
+}
+
+/* Product section */
+.products {
+  font-weight: 600;
+  font-size: 1.5rem;
+  margin-bottom: 5rem;
+}
+.card {
+  border: none;
+  background-color: #fafafa;
+  margin-bottom: 3rem;
+}
+.card_image {
+  text-align: center;
+}
+/* .card-img-top {
+  width: 15rem;
+  height: 15rem;
+} */
+.card-title {
+  text-align: center;
+  font-weight: 700;
+  font-size: large;
+}
+.card-text {
+  text-align: center;
+  font-size: small;
+}
+.modal_button {
+  text-align: center;
+}
+.btn {
+  background-color: #a9cc52;
+  color: white;
+}
+.btn:hover {
+  transform: scale(1.08);
+  transition: 0.3s;
+  color: #a9cc52;
+  background: transparent;
+  border-color: #a9cc52;
+}
+
+/* modal section */
+.modal_heading {
+  font-weight: 700;
+  padding-bottom: 1rem;
+}
+.modal_para {
+  padding-bottom: 1.5rem;
+}
+.modal_text {
+  font-size: 1rem;
+}
+
+/* modal footer */
+.footer {
+  background-color: #fafafa;
+}
+.mfooter {
+  padding-top: 1rem;
+  padding-left: 2.5rem;
+}
+.mfooter_text {
+  font-size: 1rem;
+  font-weight: 500;
+}
+.modal_contact_btn {
+  color: #a9cc52;
+  font-weight: 600;
+}
+.modal_image {
+  text-align: center;
+  /* padding-top: 2rem; */
+}
+
+.modal_image img {
+  margin-left: -15%;
+}
+.modal_contact_btn:hover {
+  color: #a9cc52;
+  text-decoration: underline;
+}
+
+.products-btn {
+  padding: 1rem 2rem;
+  background-color: #a9cc52;
+  border: none;
+  border-radius: 5px;
+  margin-top: 2.5rem;
+  color: #fff;
+  margin-bottom: 13%;
+}
+
+/* mobile responsive */
+
+@media (min-width: 320px) and (max-width: 480px) {
+  .header {
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-top: 6rem;
+    margin-bottom: 5rem;
+  }
+  .h3 {
+    font-size: 2rem;
+  }
+  .mfooter {
+    text-align: center;
+    padding-left: 1rem;
+    padding-bottom: 1rem;
+  }
+
+  .modal-content {
+    margin-top: 20%;
+  }
+  .mfootercontact {
+    margin-top: -2rem;
+  }
+  
+}
+
+@media (min-width: 481px) and (max-width: 767px) {
+  .modal {
+    margin-top: 3rem;
+  }
+}
+
+/* ipad responsive */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .mfooter {
+    text-align: center;
+    padding-left: 1rem;
+    padding-bottom: 1rem;
+  }
+  .mfootercontact {
+    margin-top: -2rem;
+}
+}

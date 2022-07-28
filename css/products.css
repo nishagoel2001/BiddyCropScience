@@ -1,0 +1,45 @@
+.products_section {
+  margin-top: 5%;
+  position: relative;
+  top: 0;
+  width: 100%;
+
+  background: url('../img/products/MacBook\ Pro\ -\ 1.svg');
+  background-size: cover;
+  margin-bottom: 0;
+}
+
+.product_content h3 {
+  font-weight: 700;
+}
+
+.product__section p {
+  font-size: 16px;
+}
+
+.product__section {
+  margin: 4rem 0rem 0rem;
+}
+
+
+
+
+
+
+/* responsive queries */
+
+@media (min-width: 481px) and (max-width: 768px) {
+  .product__section {
+    margin: 4rem 0rem 0rem;
+  }
+  .product__section .owl-carousel .owl-item img {
+    display: block;
+    width: auto;
+    justify-content: center;
+    margin-left: 30%;
+  }
+
+  /* .product_img{
+    width: auto !important;
+  } */
+}

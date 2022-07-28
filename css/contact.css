@@ -1,0 +1,85 @@
+.contact_section {
+  margin-top: 8%;
+}
+
+.contact_section h3 {
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.form-control {
+  padding: 1.5rem 0.75rem;
+}
+
+.newsletter_section {
+  position: relative;
+  top: 0;
+  width: 100%;
+  background: url('../img/contact/Frame\ 2\ \(1\).svg');
+  background-size: cover;
+  padding-bottom: 6em;
+  height: 60vh;
+  margin-bottom: 6%;
+}
+
+.newsletter_section h3 {
+  font-weight: 700;
+  border: none;
+  padding: none;
+}
+
+.news_form {
+  padding-top: 10%;
+}
+
+.news_form .form-group {
+  margin: 0 20%;
+}
+
+
+
+/* responsive Queries */
+
+@media (min-width: 320px) and (max-width: 480px) {
+  .contact_img {
+    height: 300px;
+    margin-bottom: 2rem;
+  }
+
+  .news_form {
+    background: url('../img/contact/Group\ 53.svg');
+    background-size: cover;
+    width: 100%;
+  }
+
+  .newsletter_section {
+    background: none;
+    padding-bottom: 2rem;
+    height: auto;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 768px) {
+  .Submit_btn{
+    text-align: center;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 1080px) {
+  .news_form {
+    background: url('../img/contact/Group\ 53.svg');
+    background-size: cover;
+    width: 100%;
+  }
+
+  .newsletter_section {
+    background: none;
+    height: auto;
+    padding-bottom: 2rem;
+  }
+
+  .contact_img {
+    height: 400px;
+    margin-bottom: 2rem;
+  }
+}
